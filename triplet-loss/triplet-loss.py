@@ -12,8 +12,9 @@ def triplet_loss(anchor, positive, negative, margin=1.0):
     anchor = np.asarray(anchor)
     positive = np.asarray(positive)
     negative = np.asarray(negative)
-
-    L = np.maximum(0, euclidean_distance(anchor, positive) - euclidean_distance(anchor, negative) + margin)
+    d_pos = euclidean_distance(anchor, positive)
+    d_neg = euclidean_distance(anchor, negative)
+    L = np.maximum(0, d_pos - d_neg + margin)
     return np.mean(L)
     
     
