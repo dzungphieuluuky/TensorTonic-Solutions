@@ -1,11 +1,17 @@
-# TensorTonic Solutions
+# ⚡ TensorTonic Solutions
 
-Welcome to my TensorTonic solutions repository!
+Welcome to my **TensorTonic** solutions repository! This project serves as a living library of my implementations for various machine learning and deep learning challenges.
 
-Here you'll find my solutions to various machine learning and deep learning problems from [TensorTonic](https://tensortonic.com).
+## 🧠 What is TensorTonic?
 
-## What is TensorTonic?
+[TensorTonic](https://tensortonic.com) is an interactive platform designed for mastering the "first principles" of AI. Instead of just calling libraries, the focus is on implementing core algorithms—from backpropagation to transformer architectures—entirely from scratch.
 
-TensorTonic is a platform where you can implement core algorithms of Machine Learning from scratch.
+## 📂 Repository Contents
 
-This repository contains my personal solutions to these problems, automatically synchronized from the platform.
+This repository contains my personal solutions to these challenges, featuring:
+* **From-Scratch Implementations:** Low-level logic for ML models.
+* **Algorithmic Efficiency:** Optimized Numpy code, avoid loops for fast and efficient vectorized operations.
+* **Automatic Sync:** My latest progress is automatically pushed from the TensorTonic platform to this repo.
+
+---
+*Keep exploring, keep building.*
