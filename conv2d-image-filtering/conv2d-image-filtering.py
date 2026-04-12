@@ -29,10 +29,8 @@ def conv2d(image, kernel, stride=1, padding=0):
     # Prepare output
     output = np.zeros((out_h, out_w))
     
-    # Perform convolution (cross-correlation)
     for i in range(out_h):
         for j in range(out_w):
-            # Extract the region of interest
             region = padded[i*stride : i*stride + kernel_h,
                             j*stride : j*stride + kernel_w]
             output[i, j] = np.sum(region * kernel)
