@@ -8,5 +8,5 @@ def kl_divergence(p, q, eps=1e-12):
     p = np.array(p)
     q = np.array(q)
 
-    prelog_p = np.where(p == 0, 1, p)
-    return np.sum(p * np.log(prelog_p/(q + eps)))
+    ready_to_log_p = np.where(p == 0, 1, p)
+    return np.sum(p * np.log(ready_to_log_p/(q + eps)))
