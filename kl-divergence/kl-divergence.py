@@ -4,6 +4,9 @@ def kl_divergence(p, q, eps=1e-12):
     """
     Compute KL Divergence D_KL(P || Q).
     """
-    p = np.asarray(p)
-    q = np.asarray(q)
-    return np.sum(p * np.log(p/(q + eps)))
+    # Write code here
+    p = np.array(p)
+    q = np.array(q)
+
+    prelog_p = np.where(p == 0, 1, p)
+    return np.sum(p * np.log(prelog_p/(q + eps)))
