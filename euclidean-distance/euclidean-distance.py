@@ -5,5 +5,5 @@ def euclidean_distance(x, y):
     Compute the Euclidean (L2) distance between vectors x and y.
     Must return a float.
     """
-    x, y = np.asarray(x), np.asarray(y)
-    return np.sqrt(np.sum((x - y) ** 2))
+    # Write code here
+    return np.sqrt(np.sum((np.array(x) - np.array(y))**2))
