@@ -6,4 +6,4 @@ def make_diagonal(v):
     """
     # Write code here
     v = np.array(v)
-    return v.reshape(1, -1) * np.ones(v.shape) * np.eye(v.shape[0])
+    return v.reshape(1, -1) * np.eye(v.shape[0])
