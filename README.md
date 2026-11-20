@@ -22,7 +22,7 @@ This repository contains my personal solutions to these challenges, featuring:
 Verified machine learning implementations completed on [TensorTonic](https://www.tensortonic.com).
 
 <p align="center">
-  <img src="https://www.tensortonic.com/api/badge/dense-embeddings.svg" alt="TensorTonic Verified Solutions" width="100%" />
+  <img src="https://www.tensortonic.com/api/badge/pobidaugustang.svg" alt="TensorTonic Verified Solutions" width="100%" />
 </p>
 
 | Problem | Description | Link |
@@ -153,5 +153,5 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Xavier Initialization | Scale raw weights into the Xavier uniform range using a bound derived from fan-in and fan-out. | https://www.tensortonic.com/problems/xavier-initialization |
 | Implement z-Score Standardization | Standardize NumPy features to zero mean and unit variance with explicit handling for constant columns. | https://www.tensortonic.com/problems/zscore-standardization |
 
-View my verified ML profile: [TensorTonic profile](https://www.tensortonic.com/profile/dense-embeddings)
+View my verified ML profile: [TensorTonic profile](https://www.tensortonic.com/profile/pobidaugustang)
 <!-- tensortonic:end -->
