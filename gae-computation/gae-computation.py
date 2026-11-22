@@ -1,6 +1,6 @@
-def gae(rewards, values, gamma, lam):
+def gae(rewards: list, values: list, gamma: float, lam: float) -> list:
     """
-    Compute Generalized Advantage Estimation.
+    Returns the generalized advantage estimate at every timestep.
     """
     # Write code here
     deltas = []

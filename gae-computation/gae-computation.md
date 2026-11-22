@@ -28,11 +28,13 @@ The advantage is used in policy gradient methods to weight the gradient update.
 Using advantages instead of returns reduces variance in policy gradient updates:
 
 **With returns:**
+
 $$
 \nabla_\theta J \approx E\left[\sum_t \nabla_\theta \log \pi_\theta(a_t|s_t) \cdot G_t\right]
 $$
 
 **With advantages:**
+
 $$
 \nabla_\theta J \approx E\left[\sum_t \nabla_\theta \log \pi_\theta(a_t|s_t) \cdot A_t\right]
 $$
@@ -60,21 +62,25 @@ This is an estimate of the advantage $A(s_t, a_t)$ with:
 We can use different horizons for advantage estimation:
 
 **1-step (TD error):**
+
 $$
 \hat{A}_t^{(1)} = \delta_t = r_t + \gamma V(s_{t+1}) - V(s_t)
 $$
 
 **2-step:**
+
 $$
 \hat{A}_t^{(2)} = \delta_t + \gamma \delta_{t+1} = r_t + \gamma r_{t+1} + \gamma^2 V(s_{t+2}) - V(s_t)
 $$
 
 **n-step:**
+
 $$
 \hat{A}_t^{(n)} = \sum_{l=0}^{n-1} \gamma^l \delta_{t+l}
 $$
 
 **$\infty$-step (Monte Carlo):**
+
 $$
 \hat{A}_t^{(\infty)} = \sum_{l=0}^{\infty} \gamma^l \delta_{t+l} = G_t - V(s_t)
 $$
@@ -112,12 +118,14 @@ where:
 ## Understanding the $\lambda$ Parameter
 
 **$\lambda = 0$:**
+
 $$
 \hat{A}_t = \delta_t
 $$
 Pure TD error. High bias, low variance.
 
 **$\lambda = 1$:**
+
 $$
 \hat{A}_t = \sum_{l=0}^{\infty} \gamma^l \delta_{t+l} = G_t - V(s_t)
 $$
@@ -271,11 +279,13 @@ $$
 GAE advantages are also used to compute targets for value function updates:
 
 **Value target:**
+
 $$
 V_{target}(s_t) = \hat{A}_t + V(s_t) = \sum_{l=0}^{\infty} (\gamma\lambda)^l \delta_{t+l} + V(s_t)
 $$
 
 Or equivalently, using the $\lambda$-return:
+
 $$
 G_t^\lambda = (1-\lambda)\sum_{n=1}^{\infty} \lambda^{n-1} G_t^{(n)}
 $$
